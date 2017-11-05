@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.braya.proyectoconfirebase.SolicitarAuto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="445dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="4dp">
+
+        <EditText
+            android:id="@+id/nombreBebe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/imageView2"
+            android:layout_below="@+id/imageView2"
+            android:layout_marginTop="38dp"
+            android:ems="10"
+            android:hint="Nombre del bebé"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/añosBebe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/nombreBebe"
+            android:layout_below="@+id/nombreBebe"
+            android:layout_marginTop="14dp"
+            android:width="150dp"
+            android:digits="012345"
+            android:ems="10"
+            android:freezesText="false"
+            android:hint="Años del bebé"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/telefonoBebe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/añosBebe"
+            android:layout_below="@+id/añosBebe"
+            android:layout_marginTop="16dp"
+            android:width="150dp"
+            android:ems="10"
+            android:hint="Teléfono"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/notasBebe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:height="200dp"
+            android:ems="10"
+            android:hint="Cuidados especiales"
+            android:textAlignment="inherit"
+            android:layout_above="@+id/ubicacionBebe"
+            android:layout_alignStart="@+id/telefonoBebe"
+            android:layout_below="@+id/telefonoBebe" />
+
+        <EditText
+            android:id="@+id/ubicacionBebe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ubicación"
+            android:inputType="textPersonName"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/notasBebe" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            app:srcCompat="@drawable/info"
+            android:layout_marginStart="17dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView2"
+            android:layout_marginStart="14dp"
+            android:layout_toEndOf="@+id/imageView2"
+            android:text="Información básica del bebé" />
+
+        <EditText
+            android:id="@+id/horasBebe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/telefonoBebe"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/textView2"
+            android:ems="10"
+            android:digits="456789"
+            android:hint="Horas"
+            android:inputType="number" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
